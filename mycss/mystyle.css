@@ -1,0 +1,92 @@
+html,body{
+	margin: 0%;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	background-color:  #0e1525;
+	/* #3c445c; */
+}
+
+/*----------Global Classes ---------------*/
+a{
+	text-decoration: none;
+}
+.flex-row{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	color: wheat;
+}
+
+/*----x-----Global Classes -----x---------*/
+
+/* ------------ Navigation bar --------------- */
+
+.mynav{
+	background-color:#0e1525;
+	color: wheat;
+	padding: 0.6rem;
+	height: 0rem;
+	min-height: 10vh;
+	overflow: hidden;
+}
+.mynav .nav-menu{
+	justify-content: space-between;
+}
+.mynav .nav-items{
+	display: flex;
+	margin: 0;
+}
+.mynav .nav-items .nav-link{
+	padding: 1.6rem 1rem;
+	font-size: 1.1rem;
+	position: relative;
+}
+.mynav .nav-brand a{
+font-size: 1.6rem;
+padding: 1rem 0;
+display: block; 
+}
+.mynav .social{
+	padding: 1.4rem 0;
+}
+
+/* ----x----- Navigation bar -------x---- */
+
+
+h1{
+	text-align: center;
+	color:white;
+}
+#mycreation, h2 #button{
+	text-align: center;
+	color:whitesmoke;
+}
+h4, h4 li{
+	text-align: center;
+	font-size: 17px;
+	color:aliceblue;
+}
+.mybodytext span{
+	font-size: 25px;
+}
+#accordion{
+	margin: 0px 50px;
+}
+.ui-accordion .ui-accordion-header {
+	background-color: #0e1525;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+	color: whitesmoke;
+}
+.ui-accordion .ui-accordion-content {
+	background-color: #0e1525;
+	color: wheat;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+	border: 1px solid wheat;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JM Web Developer HTML, CSS , Javascript</title>
+		
+    <!-- 1. load jquery js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- 2. load all jQuery UI .js files accordion,textillate,flipster jquery plugin js -->
+		<script src="jquery-ui-plugin/jquery-ui.min.js"></script>
+		<!-- load jQyery .css file -->
+		<link rel="stylesheet" href="jquery-ui-plugin/jquery-ui.min.css">
+
+		<!-- loaded three .js files for textillate plugins -->
+		<script src="textillate/jquery.textillate.js"></script>
+		<script src="assets/jquery.fittext.js"></script>
+		<script src="assets/jquery.lettering.js"></script>
+		<!-- loaded .css file for textillate effects -->
+		<link rel="stylesheet" href="assets/animate.css">
+
+		<!-- loaded .css and .js file for flpster -->
+    <link rel="stylesheet" href="flipster/jquery.flipster.min.css">
+    <script src="flipster/jquery.flipster.min.js"></script>
+
+    <!-- 3. load custom .css files -->
+		<link rel="stylesheet" href="mycss/mystyle.css">
+		<!-- link my custom myjQuery.js file  -->
+		<script src="myjQueryplugin.js"></script>
+		<script src="jQuery.js"></script>
+
+    <!-- include our custom script to call jquery, passing selector to find #slideshow1 -->
+  </head>
+  <body>
+
+<!-----------------Navigation Bar------------------------->
+<nav class="mynav">
+	<div class="nav-menu flex-row">
+		<div class="nav-brand">
+			<a href="#" class="text-gray">Web 50C: Javascript</a>
+		</div>
+		<div>
+			<ul class="nav-items">
+				<li class="nav-link">
+					<a href="#">Home</a>
+				</li>
+				<li class="nav-link">
+					<a href="#">About Us</a>
+				</li>
+				<li class="nav-link">
+					<a href="#">Gallery</a>
+				</li>
+				<li class="nav-link">
+					<a href="#">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+		<div class="social text-gray">
+			<a href="">facebook</a>
+			<a href="">instagram</a>
+			<a href="">twitter</a>
+			<a href="">youtube</a>
+		</div>
+	</div>
+</nav>
+
+<!-------X---------Navigation Bar-------X----------------->
+
+
+<!-------------- jQuery Textillate Animation Plugin ------------->
+<div class="change">
+    <h1 class="mytext1"> 
+			<ul class="texts">
+				<li data-out-effect="hinge" data-out-shuffle="true">Welcome to Web Development: CS 50C </li>
+				<li data-in-effect="fadeIn">Welcome to jQuery Plugin's By: Jeshish Maharjan</li>
+			</ul>
+		</h1>
+
+		<h4 class="mytext2"> 
+			<ul class="texts">
+				<li data-out-effect="fadeOut" data-out-shuffle="true">I created this a Simple Website Using jQuery Plugins</li>
+				<li data-in-effect="fadeIn">My Simple Project website about Nepal. I would strongly recommend all the travel lovers to visit Nepal. There are unimaginable places you can experience in your life. You'll be surprised. If you are willing to travel around the world, Nepal should be one of the bucket list country to visit. Travelling is also the important time of life that everyone should experience. We should to go out there and fully capture the existence. Enjoy you life.</li>
+			</ul>
+		</h4>
+</div>
+<!---------X----- jQuery Textillate Animation Plugin ----X--------->
+
+<!-------------My Juery plugin-------------->
+<div id="mycreation">
+		<h2>My own jQuery plugin below</h2>
+		<div id="button">
+				<button onclick="change()"> Change My Heading Color and Font</button>
+		</div><br><br>
+</div>
+<!-------x------My Juery plugin-------x------->
+	
+<!------------ Part-2 ---------------------->
+		<!-- My Jquery Flipster plugin  -->
+    <!-- html pattern needed by the jquery plugin -->
+    <div id="myslideshow1">
+      <ul>
+        <li><img src="nepal/1.jpg" alt="image"></li>
+				<li><img src="nepal/2.jpg" alt="image"></li>
+				<li><img src="nepal/3.jpg" alt="image"></li>
+				<li><img src="nepal/5.jpg" alt="image"></li>
+				<li><img src="nepal/4.jpg" alt="image"></li>
+				<li><img src="nepal/6.jpg" alt="image"></li>
+				<li><img src="nepal/7.jpg" alt="image"></li>
+      </ul>
+    </div>
+	
+	<!-- My jQuery Accordion Plugin -->
+		<div id="accordion">
+  <h3 class="mybodytext">Nepal in brief</h3>
+  <div>
+		<img src="nepal/Nepal.gif" alt="nepal flag" height="100px" width="100px">
+		<h2>NEPAL</h2>
+    <p>Destination Nepal, a Nations Online country profile of the former kingdom in the Himalayas in South Asia.</p>
+		<p>The landlocked, mountainous nation borders the Indian states of Uttarakhand in the west, Uttar Pradesh in the south, Bihar in the southeast and West Bengal and Sikkim in the east. In the north, it shares a border with Xizang, the autonomous region of China known as Tibet.</p>
+    <p>With an area of 147,181 km², Nepal is slightly larger than 1.5 times the size of Portugal or somewhat larger than the U.S. state of Arkansas.</p>
+		<p>Nepal has a population of 30.3 million (2021). The largest city and the national capital is Kathmandu.</p>
+		 <p>The language spoken is Nepali; about half of the population speaks the official language Nepali, the rest use one of the more than 120 other Tibeto-Burman languages.</p>
+		<p>The main religions are Hinduism (81%) and Buddhism (9%).</p>
+		
+  </div>
+  <h3 class="mybodytext">What is Nepal famous for?</h3>
+  <div>
+     <h2>Mountains</h2>
+			<p>
+				The country on the southern slopes of the Himalayas is home to eight of the world's ten highest peaks, including 	Mount Everest (8,848m; on the border between Nepal and Tibet), Lhotse (8,516 m; on the border between Tibet and Nepal), Makalu (8,463 m; on the border between Nepal and Tibet) and Kanchenjunga (8,586 m; on the border with Sikkim, India).Dhaulagiri, at 8,167 meters, is the highest mountain located within the borders of one country.	
+			</p>
+			<h2>Rivers</h2>
+			<p>
+				Nepal is known as the source of a famous river, the Ganges. Many of the main tributaries of the Ganges originate in Nepal. The Kankai, Koshi, Bagmati and Gandaki are feeder rivers of the Ganges.	
+			</p>
+			<h2>Temples</h2>
+			<p>
+				Boudha Stupa (Boudhanath) in the outskirts of Kathmandu is one of the largest spherical stupas in Nepal.
+				The Maya Devi Temple in Lumbini, the place where Buddha was born.
+				Swayambhunath, the ancient religious complex atop a hill in the Kathmandu Valley, west of Kathmandu.
+				The Pashupatinath Temple, the sacred Hindu temple complex, is located on the banks of the Bagmati River in Kathmandu Valley.	
+			</p>
+			<h2>Trivia</h2>
+			<p>
+				
+				According to legend, Nepal is the birthplace of Siddhartha, the founder of Buddhism, Gautama Buddha.
+
+				According to legend, Nepal derives its name from a Hindu sage named Ne, a muni or rishi, who was charged by Pashupati (Shiva) to protect the land.
+
+				The Nepalese Flag is the only national flag in the world that is not square.
+
+				Prayer flags, each color symbolizes an element, Air, Fire, Water and Earth.
+				Prayer wheels, turning the prayer wheel, is a physical manifestation of the phrase "turning the wheel of Dharma."
+				The Eyes of the Buddha in Nepal have a distinctive shape, painted on all four sides of the tower of a Nepalese stupa, representing the all-seeing wisdom of the Buddha.
+				Kumari, the Living Goddess, is the centuries-old institution of a female child deity in Nepal.
+				Masks, they come in all flavors, from junk for tourists to serious masks used in traditional rituals and dances.
+			</p>
+  </div>
+  <h3 class="mybodytext">Things to do</h3>
+  <div>
+    <ul>
+      <h2>EAT ALL THE DELICIOUS NEPALI FOOD</h2>
+			<p> Don’t be worried by the quality or variety of food in Nepal because it’s incredibly good! Nom. </p>
+
+				<p>For the local variety of snacks, start with Momos. The Nepali answer to dumplings, these pockets of joy come in vegetable, buff (buffalo) or chicken and can be fried or steamed. Our personal preference is steamed, served with a red chilli chutney.</p>
+
+				<P>You can also find amazing Indian influences, such as pakora and samosas on any street corner! Next, find yourself some Choila, spicy grilled buffalo meat which goes down a treat with an ice cold Everest lager.</P>
+
+				<p>For larger meals, you really can’t go past Dal Bhat, the Nepali staple meal for lunch and dinner. Dal Bhat is a traditional Nepali meal consisting of rice, a lentil based soup and other condiments, and it’s generally all you can eat so you’ll never go hungry. For those who enjoy soups, our go-to favourite is Thukpa or Thenthuk, a delicious mix of meat, noodles and vegetables in a thick soup, from the mountains of Tibet.</p>
+
+				<p>On the restaurant front, check out Yangling just outside of Thamel. It has the best Tibetan/Nepali cuisine in all of Kathmandu (we’ve tried almost everywhere!), at seriously cheap prices.</p>
+
+				<h2>EXPERIENCE NEPAL’S BEST TREKS AMONGST THE GLORIOUS HIMALAYAN MOUNTAINS</h2>
+				<p> Trekking in Nepal is without a doubt one of the greatest things to do, anywhere in the world.</p>
+
+				<p>There’s something about walking in Nepal that puts the mind and body at ease - it may be the sense of scale and perspective that only the Himalayas can give. Or perhaps it’s the fresh air, filtered by the surrounding forests and powerful winds. </p>
+
+				<p>Or possibly it’s the trails lined with fluttering prayer flags, the constant call of ‘Namaste’, or the warm smiles offered by locals. </p>
+
+				<p>Whatever it is, trekking is is one of the top things to do in Nepal, and you shouldn’t think of leaving this nation without having stepped foot on their mountain paths.</p>
+
+				<p>Nepal has a huge array of trekking opportunities, of which we’ve listed our favourite (and our suggested) hikes below:</p>
+				<h2>Some of the places to visit</h2>
+				<ul>
+					<li>EVEREST BASE CAMP</li>
+					<li>MANANG</li>
+					<li>MUSTANG</li>
+					<li>ANNAPURNA BASE CAMP</li>
+					<li>BAGLUNG: BUNGY JUMPING AND SWING</li>
+					<li>POKHARA</li>
+					<li>RARA LAKE</li>
+				</ul>
+  </div>
+  <h3 class="mybodytext">Political Map of Nepal</h3>
+  <div>
+    <img src="nepal/Nepal-political-map.jpg" alt="Nepal-political-map">
+  </div>
+</div> <br>
+	
+    <!-- <script>
+      // this technique of placing our code right before body closes
+      // is the alternative to using $(document).ready() in the head
+      // $("#slideshow1").flipster();
+			// $('.text1').textillate({ in: { effect: 'rollIn' } });
+
+		
+    </script> -->
+  </body>
+  </html>
